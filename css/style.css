@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Start nav home section */
+
+.nav-home{
+    background: linear-gradient(to right, #1e8176 51%, #1a294abd 106%);
+}
+
+.nav-home .logo{
+    font-family: 'Dantene', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.nav-home .nav-items li a{
+    color: white !important;
+    font-family: cursive;
+    font-size: 20px;
+
+}
+@media only screen and (max-width:576px){
+    .nav-home .logo{
+        font-size: 22px;
+    }
+}
+
+
+/* End nav home section */
+
+/* Start header home section */
+
+.header-home{
+    height: 600px;
+    background: linear-gradient(to right, #1e8176d4 27%, #152342c7 108%), url(../media/img/pg-1.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+}
+
+.typewriter h1{
+    overflow: hidden;
+    /* border-right: .10em solid #1e8176d4; */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .10em;
+    animation: typing 2.0s steps(30, end) forwards;
+    /* لاحظ: شيلنا blink-caret من الأنميشن */
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+.header-home h1{
+    font-size: 47px;
+    font-weight: 400;
+    font-family: 'Dantene', sans-serif;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+
+.header-home h2{
+    font-family: cursive;
+    font-size: 34px;
+    font-weight: 800;
+    color: #b2bb72;
+}
+
+.header-home p{
+    font-family: cursive;
+    font-size: 22px;
+    font-weight: 600;
+    color: beige;
+}
+/* @media only screen and (max-width:992px){
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+} */
+
+@media only screen and (max-width:768px){
+    .header-home h1{
+        font-size: 35px;
+    }
+
+    .header-home h2{
+        font-size: 25px;
+    }
+
+    .header-home p{
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width:576px){
+    .header-home h1{
+        font-size: 25px;
+    }
+
+    .header-home h2{
+        font-size: 22px;
+    }
+
+    .header-home p{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .header-home h1{
+        font-size: 20px;
+    }
+
+    .header-home h2{
+        font-size: 19px;
+    }
+
+    .header-home p{
+        font-size: 16px;
+    }
+}
+/* End header home section */
