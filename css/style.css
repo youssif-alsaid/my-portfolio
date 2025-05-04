@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 
 }
 
@@ -18,8 +20,9 @@
 
 .nav-home .nav-items li a{
     color: white !important;
-    font-family: cursive;
-    font-size: 20px;
+    font-family: "Titan One", sans-serif;
+    font-size: 19px;
+    font-weight: 200;
 
 }
 @media only screen and (max-width:576px){
@@ -34,11 +37,13 @@
 /* Start header home section */
 
 .header-home{
-    height: 600px;
+    height: 550px;
     background: linear-gradient(to right, #1e8176d4 27%, #152342c7 108%), url(../media/img/pg-1.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center ;
     text-align: center;
+    box-shadow: 20px 20px 6px 20px #82e2e5;
+    /* border-bottom-style:solid ; */
 
 }
 
@@ -52,10 +57,10 @@
     /* لاحظ: شيلنا blink-caret من الأنميشن */
   }
   
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
+@keyframes typing {
+from { width: 0% }
+to { width: 100% }
+}
 
 .header-home h1{
     font-size: 47px;
@@ -69,25 +74,18 @@
 
 
 .header-home h2{
-    font-family: cursive;
-    font-size: 34px;
-    font-weight: 800;
+    font-family: "Titan One", sans-serif;
+    font-size: 31px;
+    font-weight: 300;
     color: #b2bb72;
 }
 
 .header-home p{
-    font-family: cursive;
+    font-family: "Titan One", sans-serif;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 200;
     color: beige;
 }
-/* @media only screen and (max-width:992px){
-    @keyframes typing {
-        from { width: 0 }
-        to { width: 100% }
-      }
-
-} */
 
 @media only screen and (max-width:768px){
     .header-home h1{
@@ -132,3 +130,50 @@
     }
 }
 /* End header home section */
+
+/* Start skills home section */
+
+.skills-home{
+    background: linear-gradient(to right, #19706b 20%, #112b43 106%) ;
+    min-height: 500px;
+    
+}
+
+.skills-home .hrader-skills h2{
+    margin: 30px 0px;
+    color: white;
+    font-family: "Dantene", sans-serif;
+    font-size: 57px;
+    text-shadow: 14px 11px 3px #00000059;
+
+}
+
+.skills-home .icon-skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #b2bb72;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.skills-home .icon-skills {
+    color: white;
+    font-size: 100px;
+    font-family: "Titan One";
+}
+
+.skills-home .icon-skills p{
+    font-size: 85px;
+}
+
+.skills-home .icon-skills p:nth-of-type(2){
+    margin-top: -38px;
+    font-size: 21px;
+    color: #123348;
+}
+
+
+/* End skills home section */
