@@ -10,7 +10,7 @@
     <!--  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Titan+One&display=swap" rel="stylesheet">
 <!--  -->
 
 
@@ -29,7 +29,11 @@
     <!-- file mdbootstrab  -->
     <!-- <link rel="stylesheet" href="css/mdb.min.css"> -->
     <!-- file css -->
+     <!-- في الـ <head> -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
+
                     
 </head>
 
@@ -49,7 +53,7 @@
           <ul class="navbar-nav ml-auto my-2 my-lg-0 navbar-nav-scroll nav-items" style="max-height: 100px;">
 
             <li class="nav-item ">
-              <a class="nav-link" href="#">Skills <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#skills">Skills <span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item">
@@ -91,6 +95,124 @@
     <!-- End header home section -->
 
 
+    <!-- Start skills home section -->
+
+    <section class="skills-home" id="skills">
+
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-12 text-center hrader-skills">
+            <h2>Front End</h2>
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="icon-skills">
+              <i class="fa-brands fa-html5"></i>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="icon-skills">
+              <i class="fa-brands fa-css3"></i>
+            </div>
+          </div>
+          
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="icon-skills">
+              <i class="fa-brands fa-square-js"></i>
+            </div>
+          </div>
+          
+          
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="icon-skills">
+              <i class="fa-brands fa-bootstrap"></i>
+            </div>
+          </div>
+          
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="icon-skills">
+              <i class="fa-brands fa-mdb"></i>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="icon-skills">
+              <i class="fa-brands fa-react"></i>
+            </div>
+          </div>
+
+          <div class="col-md-12 text-center hrader-skills">
+            <h2>Back End</h2>
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="icon-skills">
+              <i class="fa-brands fa-php"></i>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="icon-skills">
+              <i class="fa-brands fa-laravel"></i>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="icon-skills">
+              <i class="fa-brands fa-python"></i>
+            </div>
+          </div>
+          
+          
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="icon-skills d-flex flex-column">
+              
+              <p>dj</p>
+              <p>django</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="icon-skills">
+              <i class="fa-solid fa-database"></i>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="icon-skills">
+              <i class="fa-solid fa-server"></i>
+            </div>
+          </div>
+          
+          <div class="col-md-12 text-center hrader-skills">
+            <h2>Problem Solving</h2>
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="icon-skills">
+
+                <p>C++</p>
+            </div>
+          </div>
+          
+
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="icon-skills">
+              <p>OPP</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- End skills home section -->
+
+
+
 
 
 
@@ -119,6 +241,15 @@ new WOW().init();
 </script>
 <!-- file mdb -->
 <!-- <script src="js/mdb.min.js"></script> -->
+
+<!-- قبل </body> -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false // علشان ترجع تاني لما تطلع وترجع تنزل
+  });
+</script>
+
 
 </body>
 </html>
