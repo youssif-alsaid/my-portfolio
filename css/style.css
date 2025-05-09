@@ -53,7 +53,7 @@
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .10em;
-    animation: typing 2.0s steps(30, end) forwards;
+    animation: typing 3.5s steps(30, end) forwards;
     /* لاحظ: شيلنا blink-caret من الأنميشن */
   }
   
@@ -176,4 +176,4 @@ to { width: 100% }
 }
 
 
-/* End skills home section */   
+/* End skills home section */
