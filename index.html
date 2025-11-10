@@ -3,610 +3,951 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MY-Portfolio</title>
-    <!-- Start fonts -->
-    <!-- font dantene -->
-    <link href="https://fonts.cdnfonts.com/css/dantene" rel="stylesheet" />
-    <!--  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Youssif El-said</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Titan+One&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-kzk5FqSb5fYi8s/..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- End fonts -->
-
-    <!-- file wow -->
-    <link rel="stylesheet" href="css/wow.min.css" />
-    <!-- file fonts -->
-    <link rel="stylesheet" href="css/all.min.css" />
-    <!-- file animate -->
-    <link rel="stylesheet" href="css/animate.min.css" />
-    <!-- file bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- file mdbootstrab  -->
-    <!-- <link rel="stylesheet" href="css/mdb.min.css"> -->
-    <!-- file css -->
-    <!-- في الـ <head> -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="tooplate-titan-style.css" />
   </head>
-
   <body>
-    <!-- Start navbar home section -->
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-home">
-      <a class="navbar-brand logo" href="#">&lt;Youssif EL-said /&gt;</a>
-
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarScroll"
-        aria-controls="navbarScroll"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul
-          class="navbar-nav ml-auto my-2 my-lg-0 navbar-nav-scroll nav-items"
-          style="max-height: 100px"
-        >
-          <li class="nav-item">
-            <a class="nav-link" href="#skills"
-              >Skills <span class="sr-only">(current)</span></a
-            >
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#About-me">About-me</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#Contact-me">Contact-me</a>
-          </li>
+    <nav id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">
+          <div class="logo-text">&lt;Youssif El-said/&gt;</div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#timeline">Journey</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-btn" id="mobileMenuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="mobile-nav" id="mobileNav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#timeline">Journey</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
 
-    <!-- End navbar home section -->
+    <section id="home" class="hero">
+      <div class="hero-bg-animation">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="geo-shape geo-1"></div>
+        <div class="geo-shape geo-2"></div>
+        <div class="particles">
+          <span class="particle"></span>
+          <span class="particle"></span>
+          <span class="particle"></span>
+          <span class="particle"></span>
+          <span class="particle"></span>
+          <span class="particle"></span>
+          <span class="particle"></span>
+          <span class="particle"></span>
+          <span class="particle"></span>
+          <span class="particle"></span>
+        </div>
+      </div>
 
-    <!-- Start header home section -->
+      <div class="hero-content">
+        <h1>Youssif El-said</h1>
+        <p class="subtitle">Front-End Developer & Designer</p>
+        <p>Building modern web interfaces with React, Tailwind & Bootstrap</p>
+        <div class="cta-buttons">
+          <a href="#portfolio" class="cta-primary">View My Work</a>
+          <a href="#contact" class="cta-secondary">Let's Talk</a>
+        </div>
 
-    <header class="header-home">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 typewriter">
-            <h1>Hi, I'm Youssif EL-said 👋</h1>
-            <h2>Web Developer | Laravel & JavaScript Enthusiast</h2>
-            <p>
-              I build modern, responsive websites and web apps with clean,
-              efficient code.
-            </p>
+        <div class="stats-section">
+          <div class="stat-card">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">2+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">9+</span>
+            <span class="stat-label">Clients</span>
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <!-- End header home section -->
-
-    <!-- Start skills home section -->
-
-    <section class="skills-home" id="skills">
+    <section id="about" class="fade-in">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center hrader-skills">
-            <h2>Front End</h2>
-          </div>
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">
+            Front-End Developer crafting clean, modern, and responsive web
+            experiences
+          </p>
+        </div>
 
-          <div class="col-md-4 d-flex justify-content-center">
-            <div class="icon-skills">
-              <i class="fa-brands fa-html5"></i>
+        <div class="about-content">
+          <div class="about-intro">
+            <div class="about-image"></div>
+            <div class="about-text">
+              <h3>My Journey</h3>
+              <p>
+                I'm <strong>Youssif Elsaid</strong>, a passionate Front-End
+                Developer with over 2 years of hands-on experience building
+                interactive and modern web interfaces. I specialize in
+                <strong>React.js, JavaScript, HTML, CSS, Bootstrap,</strong> and
+                <strong>Tailwind CSS</strong>.
+              </p>
+              <p>
+                My goal is to transform creative ideas into functional, visually
+                appealing digital products with smooth user experiences and
+                clean, maintainable code. When I'm not coding, I enjoy learning
+                new technologies, improving UI/UX skills, and experimenting with
+                design trends.
+              </p>
             </div>
           </div>
 
-          <div class="col-md-4 d-flex justify-content-center">
-            <div class="icon-skills">
-              <i class="fa-brands fa-css3"></i>
+          <div class="about-cards">
+            <div class="about-card">
+              <h4>🎯 Mission</h4>
+              <p>
+                To design and develop modern, user-friendly web interfaces that
+                help individuals and businesses grow their online presence
+                efficiently.
+              </p>
             </div>
-          </div>
 
-          <div class="col-md-4 d-flex justify-content-center">
-            <div class="icon-skills">
-              <i class="fa-brands fa-square-js"></i>
-            </div>
-          </div>
-
-          <div class="col-md-4 d-flex justify-content-center">
-            <div class="icon-skills">
-              <i class="fa-brands fa-bootstrap"></i>
-            </div>
-          </div>
-
-          <div class="col-md-4 d-flex justify-content-center">
-            <div class="icon-skills">
-              <i class="fa-brands fa-mdb"></i>
-            </div>
-          </div>
-
-          <div class="col-md-4 d-flex justify-content-center">
-            <div class="icon-skills">
-              <i class="fa-brands fa-react"></i>
-            </div>
-          </div>
-
-          <div class="col-md-12 text-center hrader-skills">
-            <h2>Problem Solving</h2>
-          </div>
-
-          <div class="col-md-4 d-flex justify-content-center">
-            <div class="icon-skills">
-              <p>C++</p>
-            </div>
-          </div>
-
-          <div class="col-md-4 d-flex justify-content-center">
-            <div class="icon-skills">
-              <p>OPP</p>
+            <div class="about-card">
+              <h4>💡 Vision</h4>
+              <p>
+                To build a seamless connection between technology and design,
+                creating digital experiences that are both powerful and
+                enjoyable to use.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- End skills home section -->
-
-    <!-- Start projects home section -->
-
-    <section class="projects-home" id="projects">
+    <section id="skills" class="fade-in">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center hrader-skills">
-            <h2>Projects</h2>
+        <div class="section-header">
+          <h2 class="section-title">Skills & Expertise</h2>
+          <p class="section-subtitle">
+            Turning creative ideas into functional, modern web experiences
+          </p>
+        </div>
+
+        <div class="skills-container">
+          <div class="skills-wrapper">
+            <div class="skills-visual">
+              <div class="skills-circle">
+                <div class="skill-node">
+                  <div class="skill-icon">
+                    <i class="fa-brands fa-react"></i>
+                  </div>
+                  <div class="skill-name">React</div>
+                </div>
+                <div class="skill-node">
+                  <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                  <div class="skill-name">HTML / CSS</div>
+                </div>
+                <div class="skill-node">
+                  <div class="skill-icon">
+                    <i class="fa-solid fa-pencil-ruler"></i>
+                  </div>
+                  <div class="skill-name">UI / UX</div>
+                </div>
+                <div class="skill-node">
+                  <div class="skill-icon">
+                    <i class="fa-solid fa-palette"></i>
+                  </div>
+                  <div class="skill-name">Tailwind</div>
+                </div>
+                <div class="skill-node">
+                  <div class="skill-icon">
+                    <i class="fa-brands fa-bootstrap"></i>
+                  </div>
+                  <div class="skill-name">Bootstrap</div>
+                </div>
+                <div class="skill-node">
+                  <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+                  <div class="skill-name">JavaScript</div>
+                </div>
+                <div class="skills-center">
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-item">
+                <h4>
+                  <i class="fa-solid fa-laptop-code"></i> Frontend Development
+                </h4>
+                <p>
+                  Expertise in React, JavaScript, HTML, CSS, and Tailwind for
+                  creating modern, responsive, and interactive user interfaces.
+                </p>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" style="width: 95%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <h4><i class="fa-solid fa-layer-group"></i> UI / UX Design</h4>
+                <p>
+                  Strong understanding of user experience and interface design,
+                  focusing on clarity, usability, and visual harmony.
+                </p>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" style="width: 90%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <h4>
+                  <i class="fa-solid fa-gauge-high"></i> Performance &
+                  Optimization
+                </h4>
+                <p>
+                  Ensuring smooth performance, optimized load times, and clean,
+                  scalable front-end architecture.
+                </p>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" style="width: 93%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <h4>
+                  <i class="fa-solid fa-users-gear"></i> Team Collaboration
+                </h4>
+                <p>
+                  Experienced in working with teams using GitHub, Trello, and
+                  ClickUp for organized workflow and smooth communication.
+                </p>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" style="width: 88%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My Journey</h2>
+          <p class="section-subtitle">
+            From passionate learner to professional developer — here’s how my
+            path evolved
+          </p>
+        </div>
+
+        <div class="timeline-controls">
+          <button class="timeline-filter active" data-filter="all">All</button>
+          <button class="timeline-filter" data-filter="education">
+            Education
+          </button>
+          <button class="timeline-filter" data-filter="work">Work</button>
+          <button class="timeline-filter" data-filter="project">
+            Projects
+          </button>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+          <div class="timeline-progress"></div>
+
+          <!-- Education -->
+          <div class="timeline-item" data-category="education">
+            <div class="timeline-node">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-year">2023 - Present</div>
+              <h3 class="timeline-title">Faculty of Computers & Information</h3>
+              <div class="timeline-company">Suez Canal University</div>
+              <p class="timeline-description">
+                Currently pursuing my Bachelor’s degree in Computer Science,
+                focusing on web development and modern frameworks like React and
+                Laravel.
+              </p>
+              <div class="timeline-skills">
+                <span class="timeline-skill">HTML</span>
+                <span class="timeline-skill">CSS</span>
+                <span class="timeline-skill">JavaScript</span>
+                <span class="timeline-skill">React</span>
+              </div>
+              <div class="timeline-achievements">
+                <div class="timeline-achievement">
+                  Top 5% in Front-End track
+                </div>
+                <div class="timeline-achievement">
+                  Completed Creativa web development course
+                </div>
+                <div class="timeline-achievement">
+                  Built multiple academic web projects
+                </div>
+              </div>
+              <div class="timeline-achievements">
+                <!-- Projects List -->
+                <h3 class="timeline-title text-left">Projects:</h3>
+                <div class="timeline-achievement">
+                  <a
+                    href="https://amira-khattap.netlify.app/"
+                    target="_blank"
+                    class="a-link"
+                  >
+                    Dr Amira Khattap
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <!-- first project -->
-          <div class="col-md-6 d-flex justify-content-center mb-3">
-            <div class="card card-projects" style="width: 18rem">
-              <img
-                src="media/img/project1.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">first project</h5>
-                <p class="card-text">
-                  My first project to practice the basics of HTML & CSS
-                </p>
+          <!-- Work -->
+          <div class="timeline-item" data-category="work">
+            <div class="timeline-node">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-year">2024 - Present</div>
+              <h3 class="timeline-title">Front-End Developer</h3>
+              <div class="timeline-company">
+                <a href="https://www.facebook.com/rostech1" target="_blank"
+                  >ROS Tech</a
+                >
+              </div>
+              <p class="timeline-description">
+                Working as a front-end developer, building modern and responsive
+                web applications using React, Tailwind CSS, and Bootstrap.
+                Focused on user experience, clean design, and code scalability.
+              </p>
+              <div class="timeline-skills">
+                <span class="timeline-skill">React</span>
+                <span class="timeline-skill">Tailwind CSS</span>
+                <span class="timeline-skill">Bootstrap</span>
+                <span class="timeline-skill">UI/UX</span>
+              </div>
+              <div class="timeline-achievements">
+                <div class="timeline-achievement">
+                  Delivered multiple live projects for clients
+                </div>
+                <div class="timeline-achievement">
+                  Improved UI performance by 40%
+                </div>
+                <div class="timeline-achievement">
+                  Collaborated using Trello & GitHub
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Creativa Courses -->
+          <div class="timeline-item" data-category="education">
+            <div class="timeline-node">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-year">March 2025</div>
+              <h3 class="timeline-title">Creativa Web Development Courses</h3>
+              <div class="timeline-company">Creativa, Ismailia</div>
+              <p class="timeline-description">
+                Completed intensive front-end and back-end courses to strengthen
+                web development skills using React and Laravel.
+              </p>
+              <div class="timeline-skills">
+                <span class="timeline-skill">React</span>
+                <span class="timeline-skill">Laravel</span>
+                <span class="timeline-skill">JavaScript</span>
+              </div>
+              <div class="timeline-achievements">
+                <div class="timeline-achievement">
+                  <a
+                    href="https://drive.google.com/file/d/19WlVUcT3WaAnAyH-_B-ljQcvcm1cmyUQ/view?usp=sharing"
+                    class="a-link"
+                    target="_blank"
+                    >Front-End Certificate
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+                <div class="timeline-achievement">
+                  <a
+                    href="https://drive.google.com/file/d/14rArXgRkxGd0LSiVatvrjQpMyl4v99Pm/view?usp=sharing"
+                    class="a-link"
+                    target="_blank"
+                    >Full-Stack Certificate
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects by ROS Tech -->
+          <div class="timeline-item" data-category="project">
+            <div class="timeline-node"><i class="fa-solid fa-code"></i></div>
+            <div class="timeline-content">
+              <div class="timeline-year">2025</div>
+              <h3 class="timeline-title">
+                <a href="https://www.facebook.com/rostech1">
+                  Projects by ROS Tech
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </h3>
+              <div class="timeline-company">
+                <a href="https://www.facebook.com/rostech1" target="_blank"
+                  >ROS Tech</a
+                >
+              </div>
+              <p class="timeline-description">
+                A collection of projects and educational platforms developed
+                with modern front-end technologies, focusing on responsive
+                design, user experience, and interactive features.
+              </p>
+              <div class="timeline-skills">
+                <span class="timeline-skill">HTML</span>
+                <span class="timeline-skill">CSS</span>
+                <span class="timeline-skill">JavaScript</span>
+                <span class="timeline-skill">Bootstrap</span>
+                <span class="timeline-skill">Tailwind</span>
+              </div>
+              <div class="timeline-achievements">
+                <!-- Projects List -->
+                <h3 class="timeline-title">Projects:</h3>
+                <div class="timeline-achievement">
+                  <a href="https://daresly.com/" target="_blank" class="a-link">
+                    Darsely Educational Platform
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+                <div class="timeline-achievement">
+                  <a
+                    href="https://www.ig-level.com/"
+                    target="_blank"
+                    class="a-link"
+                  >
+                    IG-Level Educational Platform
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+                <div class="timeline-achievement">
+                  <a
+                    href="https://el3abqary.com/"
+                    target="_blank"
+                    class="a-link"
+                  >
+                    El3abqary Educational Platform
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+                <div class="timeline-achievement">
+                  <a
+                    href="https://www.mr-mahmoud-foaad.com/"
+                    target="_blank"
+                    class="a-link"
+                  >
+                    Mr Mahmoud Educational Platform
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Freelancing -->
+          <div class="timeline-item" data-category="work">
+            <div class="timeline-node">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-year">2023 - Present</div>
+              <h3 class="timeline-title">Freelance Front-End Developer</h3>
+              <div class="timeline-company">Independent</div>
+              <p class="timeline-description">
+                Collaborated with clients to design and build responsive
+                portfolio and business websites. Specialized in clean UI, smooth
+                transitions, and scalable front-end structures.
+              </p>
+              <div class="timeline-skills">
+                <span class="timeline-skill">HTML</span>
+                <span class="timeline-skill">CSS</span>
+                <span class="timeline-skill">JavaScript</span>
+                <span class="timeline-skill">Bootstrap</span>
+                <span class="timeline-skill">Tailwind</span>
+                <span class="timeline-skill">React</span>
+                <span class="timeline-skill">UI Design</span>
+              </div>
+              <div class="timeline-achievements">
+                <div class="timeline-achievement">9+ satisfied clients</div>
+                <div class="timeline-achievement">
+                  5-star ratings on freelance projects
+                </div>
+                <div class="timeline-achievement">
+                  Delivered projects before deadline
+                </div>
+              </div>
+              <!-- ---------- -->
+              <div class="timeline-achievements">
+                <!-- Projects List -->
+                <h3 class="timeline-title text-left">Projects:</h3>
+                <div class="timeline-achievement">
+                  <a
+                    href="https://amira-khattap.netlify.app/"
+                    target="_blank"
+                    class="a-link"
+                  >
+                    Dr Amira Khattap
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ongoing Growth -->
+          <div class="timeline-item" data-category="education">
+            <div class="timeline-node">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-year">2025 - Ongoing</div>
+              <h3 class="timeline-title">Continuous Learning</h3>
+              <div class="timeline-company">Self Development</div>
+              <p class="timeline-description">
+                Constantly improving my skills by exploring new front-end
+                frameworks, back-end technologies, and UI trends to stay updated
+                with the fast-moving tech world.
+              </p>
+              <div class="timeline-skills">
+                <span class="timeline-skill">Next.js</span>
+                <span class="timeline-skill">PHP</span>
+                <span class="timeline-skill">Laravel</span>
+                <span class="timeline-skill">API Integration</span>
+              </div>
+              <div class="timeline-achievements">
+                <div class="timeline-achievement">
+                  Building personal full-stack projects
+                </div>
+                <div class="timeline-achievement">
+                  Exploring AI-integrated UIs
+                </div>
+                <div class="timeline-achievement">
+                  Sharing knowledge with other devs
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            A showcase of projects demonstrating creativity, UI design, and
+            front-end development skills across various web applications and
+            interactive platforms.
+          </p>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- First Project: Starter Platform (UI Only) -->
+          <div class="portfolio-card">
+            <div class="portfolio-image first-project"></div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">
                 <a
                   href="https://youssif-alsaid.github.io/My-Project-one"
                   target="_blank"
-                  class="btn-live"
-                  >Live Project</a
                 >
-                <a
-                  href="https://github.com/youssif-alsaid/My-Project-one"
-                  target="_blank"
-                  class="btn-repo"
-                  >GitHub Repo</a
-                >
-              </div>
-              <div class="icons-projects">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3"></i>
+                  First Project (UI Only) <i class="fa-solid fa-link"></i>
+                </a>
+              </h3>
+              <p class="portfolio-description">
+                Practiced UI design by replicating a simple educational platform
+                layout.
+              </p>
+              <div class="portfolio-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Bootstrap</span>
               </div>
             </div>
           </div>
 
-          <!-- secno project -->
-          <div class="col-md-6 d-flex justify-content-center mb-3">
-            <div class="card card-projects" style="width: 18rem">
-              <img
-                src="media/img/project2.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Second project</h5>
-                <p class="card-text">
-                  My second project to practice the basics of HTML & CSS
-                </p>
+          <!-- Second Project: Starter Platform (UI Only) -->
+          <div class="portfolio-card">
+            <div class="portfolio-image second-project"></div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">
                 <a
                   href="https://youssif-alsaid.github.io/Tempalet-Two"
                   target="_blank"
-                  class="btn-live"
-                  >Live Project</a
                 >
-                <a
-                  href="https://github.com/youssif-alsaid/Tempalet-Two"
-                  target="_blank"
-                  class="btn-repo"
-                  >GitHub Repo</a
-                >
-              </div>
-              <div class="icons-projects">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3"></i>
+                  Second Project (UI Only) <i class="fa-solid fa-link"></i>
+                </a>
+              </h3>
+              <p class="portfolio-description">
+                Practiced UI design by replicating a simple educational platform
+                layout.
+              </p>
+              <div class="portfolio-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Bootstrap</span>
               </div>
             </div>
           </div>
 
-          <!-- dice game -->
-          <div class="col-md-6 d-flex justify-content-center mb-3">
-            <div class="card card-projects" style="width: 18rem">
-              <img
-                src="media/img/project3.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Dice Game</h5>
-                <p class="card-text">
-                  My third project: an interactive Dice Game built with HTML,
-                  CSS & JavaScript.
-                </p>
+          <!-- Dice Game Project -->
+          <div class="portfolio-card">
+            <div class="portfolio-image dice-game"></div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">
                 <a
                   href="https://youssif-alsaid.github.io/dice-game-/"
                   target="_blank"
-                  class="btn-live"
-                  >Live Project</a
                 >
-                <a
-                  href="https://github.com/youssif-alsaid/dice-game-"
-                  target="_blank"
-                  class="btn-repo"
-                  >GitHub Repo</a
-                >
-              </div>
-              <div class="icons-projects">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3"></i>
-                <i class="fa-brands fa-square-js"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- dreasly.com -->
-          <div class="col-md-6 d-flex justify-content-center mb-3">
-            <div class="card card-projects" style="width: 18rem">
-              <img
-                src="media/img/project4.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Darsly educational platform</h5>
-                <p class="card-text">
-                  I worked on the Frontend of the Darsly educational platform,
-                  developed in collaboration with
-                  <a href="https://www.facebook.com/rostech1">ROS Tech</a>. This
-                  project gave me valuable experience in delivering a complete
-                  frontend and collaborating effectively with the backend team
-                  to build a fully functional educational system."
-                </p>
-                <a href="https://daresly.com" target="_blank" class="btn-live"
-                  >Live Project</a
-                >
-              </div>
-              <div class="icons-projects">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3"></i>
-                <i class="fa-brands fa-square-js"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- mr-ahmed-mostafa.com -->
-          <div class="col-md-6 d-flex justify-content-center mb-3">
-            <div class="card card-projects" style="width: 18rem">
-              <img
-                src="media/img/project5.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">elabkary educational platform</h5>
-                <p class="card-text">
-                  I worked on the Frontend of the elabkary platform in
-                  collaboration with
-                  <a href="https://www.facebook.com/rostech1">ROS Tech</a>. This
-                  project allowed me to gain more practical experience in
-                  building a complete frontend and collaborating closely with
-                  the backend team to deliver an integrated platform
-                </p>
-                <a
-                  href="https://el3abqary.com/"
-                  target="_blank"
-                  class="btn-live"
-                  >Live Project</a
-                >
-              </div>
-              <div class="icons-projects">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3"></i>
-                <i class="fa-brands fa-square-js"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- my portfolio -->
-          <div class="col-md-6 d-flex justify-content-center mb-3">
-            <div class="card card-projects" style="width: 18rem">
-              <img
-                src="media/img/project6.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">My portfolio </h5>
-                <p class="card-text">
-                  My personal portfolio website to showcase my projects, built
-                  using HTML & CSS.
-                </p>
-                <div class="btn-links">
-                  <a
-                    href="https://youssif-alsaid.github.io/my-portfolio"
-                    target="_blank"
-                    class="btn-live"
-                    >Live Project</a
-                  >
-                  <a
-                    href="https://github.com/youssif-alsaid/my-portfolio"
-                    target="_blank"
-                    class="btn-repo"
-                    >GitHub Repo</a
-                  >
-                </div>
-              </div>
-              <div class="icons-projects">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- Dr amira portfolio  -->
-          <div class="col-md-6 d-flex justify-content-center mb-3">
-            <div class="card card-projects" style="width: 18rem">
-              <img
-                src="media/img/dr-amira-project.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Dr amira portfolio </h5>
-                <p class="card-text">
-                  Dr amira portfolio website to showcase Your skills, built
-                  using HTML, CSS & Tailwind.
-                </p>
-                <div class="btn-links">
-                  <a
-                    href="https://amira-khattap.netlify.app"
-                    target="_blank"
-                    class="btn-live"
-                    >Live Project</a
-                  >
-                  <a
-                    href="https://github.com/youssif-alsaid/amira-khattap"
-                    target="_blank"
-                    class="btn-repo"
-                    >GitHub Repo</a
-                  >
-                </div>
-              </div>
-              <div class="icons-projects">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3"></i>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- End projects home section -->
-
-    <!-- Start about me home section -->
-    <section class="about-me-home" id="About-me">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center hrader-skills">
-            <h2>About Me</h2>
-          </div>
-
-          <div
-            class="col-md-4 d-flex justify-content-center flex-column align-items-center mb-3"
-          >
-            <div class="img-about-me">
-              <img src="media/img/Youssif El-said.jpeg" alt="about me" />
-            </div>
-            <h2 class="my-name">youssif El-said</h2>
-          </div>
-
-          <div class="col-md-6 d-flex align-items-center">
-            <div class="text-about-me">
-              <h3>Hello! I'm Youssif EL-said</h3>
-              <p>
-                I’m Youssif El-said, a Front-End Developer at ROS Tech with over
-                2 years of experience in building modern, responsive web
-                interfaces. I specialize in React, Bootstrap, and Tailwind CSS,
-                and I’m passionate about creating elegant and user-friendly
-                digital experiences. With a solid background in UI/UX Design, I
-                focus on crafting interfaces that balance aesthetics and
-                functionality. I’m proficient in GitHub, and I work effectively
-                both independently and within a team. I use Trello and ClickUp
-                to manage projects and maintain organized workflows.
+                  Dice Game <i class="fa-solid fa-link"></i>
+                </a>
+              </h3>
+              <p class="portfolio-description">
+                A simple interactive dice game demonstrating fundamental
+                JavaScript logic, DOM manipulation, and game mechanics.
               </p>
-              <a
-                href="https://drive.google.com/file/d/1nXoGk9y7m1YH5jv5YI3bX4F8ZtJt2f0t/view?usp=sharing"
-                target="_blank"
-                class="btn-cv"
-                >Download CV</a
-              >
+              <div class="portfolio-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Darsely -->
+          <div class="portfolio-card">
+            <div class="portfolio-image daresly"></div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">
+                <a href="https://daresly.com/" target="_blank">
+                  Darsely Educational Platform <i class="fa-solid fa-link"></i>
+                </a>
+              </h3>
+              <p class="portfolio-description">
+                Front-End development for a platform providing online lessons,
+                interactive exams, and progress tracking for students.
+              </p>
+              <div class="portfolio-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- El3abqary -->
+          <div class="portfolio-card">
+            <div class="portfolio-image el3abqary"></div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">
+                <a href="https://el3abqary.com/" target="_blank">
+                  El3abqary Educational Platform
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </h3>
+              <p class="portfolio-description">
+                An interactive learning platform with responsive layout, smooth
+                transitions, and modern web standards implementation.
+              </p>
+              <div class="portfolio-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- IG-Level -->
+          <div class="portfolio-card">
+            <div class="portfolio-image ig-level"></div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">
+                <a href="https://www.ig-level.com/" target="_blank">
+                  IG-Level Platform <i class="fa-solid fa-link"></i>
+                </a>
+              </h3>
+              <p class="portfolio-description">
+                Educational platform for British curriculum students, offering
+                interactive lessons, quizzes, and dashboards to track student
+                performance.
+              </p>
+              <div class="portfolio-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Tailwind CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mr Mahmoud -->
+          <div class="portfolio-card">
+            <div class="portfolio-image mr-mahmoud"></div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">
+                <a href="https://www.mr-mahmoud-foaad.com/" target="_blank">
+                  Mr Mahmoud Educational Platform
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </h3>
+              <p class="portfolio-description">
+                A responsive website with multi-page navigation, interactive
+                elements, and animations designed for educational purposes.
+              </p>
+              <div class="portfolio-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dr Amira Project -->
+          <div class="portfolio-card">
+            <div class="portfolio-image dr-amira"></div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">
+                <a href="https://amira-khattap.netlify.app/" target="_blank">
+                  Dr Amira Platform <i class="fa-solid fa-link"></i>
+                </a>
+              </h3>
+              <p class="portfolio-description">
+                Educational platform designed for interactive learning and
+                student engagement, featuring responsive layout and smooth UI
+                interactions.
+              </p>
+              <div class="portfolio-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Tailwind CSS</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End about me home section -->
 
-    <!-- Start contact me home section -->
-    <section class="contact-me-home" id="Contact-me">
+    <section id="contact" class="fade-in">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center hrader-skills">
-            <h2>Contact Me</h2>
+        <div class="section-header">
+          <h2 class="section-title">Let's Build Something Great</h2>
+          <p class="section-subtitle">
+            Have a project in mind or need a modern web experience? Let’s talk!
+          </p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p>
+              I'm always open to new collaborations and exciting challenges.
+              Whether you need a landing page, a full web app, or UI/UX design —
+              I can help you bring your idea to life with clean, responsive
+              code.
+            </p>
+
+            <div class="contact-details">
+              <h4><i class="fa-solid fa-briefcase"></i> Available for:</h4>
+              <ul>
+                <li>Freelance Projects</li>
+                <li>Front-End Development</li>
+                <li>React Applications</li>
+                <li>UI/UX Design</li>
+              </ul>
+            </div>
+
+            <div class="contact-details">
+              <h4><i class="fa-solid fa-location-dot"></i> Based in:</h4>
+              <p>Ismailia, Egypt (Available for Remote Work)</p>
+            </div>
+
+            <div class="contact-details">
+              <h4><i class="fa-solid fa-envelope"></i> Email:</h4>
+              <p>
+                <a href="mailto:yossefalsaid216@gmail.com"
+                  >yossefalsaid216@gmail.com</a
+                >
+              </p>
+            </div>
+
+            <div class="contact-details">
+              <h4><i class="fa-solid fa-link"></i> Social:</h4>
+              <p>
+                <a href="https://github.com/youssif-alsaid" target="_blank">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                |
+                <a
+                  href="https://www.linkedin.com/in/youssif-alsaid/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                |
+                <a
+                  href="https://www.facebook.com/yousefelsaed.elgamal"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-facebook"></i> Facebook
+                </a>
+
+                |
+                <a href="https://wa.me/201276086191" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+              </p>
+            </div>
           </div>
 
-          <!-- Phone Card -->
-          <div class="col-md-4 col-sm-6">
-            <a href="tel:+201276086191" class="text-decoration-none">
-              <div class="text-center card-contact">
-                <i class="fas fa-phone-alt mb-3"></i>
-                <h4>Phone</h4>
-                <p class="mb-0">+201276086191</p>
+          <!-- <div class="contact-form-container">
+            <form class="contact-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Your Name"
+                  required
+                />
               </div>
-            </a>
-          </div>
-
-          <!-- Email Card -->
-          <div class="col-md-4 col-sm-6">
-            <a
-              href="mailto:yossefalsaid216@gmail.com"
-              class="text-decoration-none"
-            >
-              <div class="text-center card-contact">
-                <i class="fas fa-envelope mb-3"></i>
-                <h4>Email</h4>
-                <p class="mb-0">yossefalsaid216@gmail.com</p>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-input"
+                  placeholder="Your Email"
+                  required
+                />
               </div>
-            </a>
-          </div>
-
-          <!-- LinkedIn Card -->
-          <div class="col-md-4 col-sm-6">
-            <a
-              href="https://www.linkedin.com/in/youssif-alsaid"
-              target="_blank"
-              class="text-decoration-none"
-            >
-              <div class="text-center card-contact">
-                <i class="fab fa-linkedin mb-3"></i>
-                <h4>LinkedIn</h4>
-                <p class="mb-0">Visit My Profile</p>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Project Type"
+                  required
+                />
               </div>
-            </a>
-          </div>
-
-          <!-- WhatsApp Card -->
-          <div class="col-md-4 col-sm-6">
-            <a
-              href="https://wa.me/201276086191"
-              target="_blank"
-              class="text-decoration-none"
-            >
-              <div class="text-center card-contact">
-                <i class="fab fa-whatsapp mb-3"></i>
-                <h4>WhatsApp</h4>
-                <p class="mb-0">Chat with me</p>
+              <div class="form-group">
+                <textarea
+                  class="form-textarea"
+                  rows="5"
+                  placeholder="Tell me about your project..."
+                  required
+                ></textarea>
               </div>
-            </a>
-          </div>
-
-          <!-- Facebook Card -->
-          <div class="col-md-4 col-sm-6">
-            <a
-              href="https://www.facebook.com/yousefelsaed.elgamal"
-              target="_blank"
-              class="text-decoration-none"
-            >
-              <div class="text-center card-contact">
-                <i class="fab fa-facebook mb-3"></i>
-                <h4>Facebook</h4>
-                <p class="mb-0">Visit My Profile</p>
-              </div>
-            </a>
-          </div>
-
-          <!-- Telegram Card -->
-          <div class="col-md-4 col-sm-6">
-            <a
-              href="https://t.me/youssifElsaid"
-              target="_blank"
-              class="text-decoration-none"
-            >
-              <div class="text-center card-contact">
-                <i class="fab fa-telegram mb-3"></i>
-                <h4>Telegram</h4>
-                <p class="mb-0">Message Me</p>
-              </div>
-            </a>
-          </div>
+              <button type="submit" class="submit-btn">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div> -->
         </div>
       </div>
     </section>
 
-    <!-- End contact me home section -->
-
-    <!-- Start footer home section -->
-    <footer class="footer text-center">
-      <p>
-        Made with ❤️ by
-        <a href="https://wa.me/201276086191" target="_blank"
-          >&lt;Youssif EL-said/&gt;</a
-        >
-      </p>
+    <footer>
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2025
+          <a
+            href="https://www.facebook.com/yousefelsaed.elgamal"
+            target="_blank"
+            >Youssif El-said</a
+          >. All rights reserved.
+        </p>
+        <!-- <div class="footer-credits">
+          <a
+            href="https://fontawesome.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-credit-link"
+          >
+            <span class="footer-credit-icon"
+              ><i class="fa-solid fa-icons"></i
+            ></span>
+            <span>Font Awesome</span>
+          </a>
+          <div class="footer-divider"></div>
+          <a
+            href="https://fonts.google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-credit-link"
+          >
+            <span class="footer-credit-icon"
+              ><i class="fa-solid fa-font"></i
+            ></span>
+            <span>Google Fonts</span>
+          </a>
+          <a
+            href="https://unsplash.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-credit-link"
+          >
+            <span class="footer-credit-icon"
+              ><i class="fa-solid fa-camera"></i
+            ></span>
+            <span>Unsplash</span>
+          </a>
+          <a
+            href="https://cdnjs.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-credit-link"
+          >
+            <span class="footer-credit-icon"
+              ><i class="fa-solid fa-bolt"></i
+            ></span>
+            <span>CDNJS</span>
+          </a>
+        </div> -->
+      </div>
     </footer>
-    <!-- End footer home section -->
 
-    <!-- file js fonts-->
-    <script src="js/all.min.js"></script>
-    <!-- jquery -->
-    <script src="js/jquery.slim.min.js"></script>
-    <!-- popper -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- file wow -->
-    <script src="js/popper.min.js"></script>
-    <!-- file js bootstrap -->
-    <script src="js/wow.min.js"></script>
-    <!-- script to start wow -->
-    <script>
-      new WOW().init();
-    </script>
-    <!-- file mdb -->
-    <!-- <script src="js/mdb.min.js"></script> -->
-
-    <!-- قبل </body> -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        once: false, // علشان ترجع تاني لما تطلع وترجع تنزل
-      });
-    </script>
+    <script src="tooplate-titan-script.js"></script>
   </body>
 </html>
