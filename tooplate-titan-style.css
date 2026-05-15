@@ -14,26 +14,41 @@ https://www.tooplate.com/view/2147-titan-folio
 }
 
 :root {
---glass-bg: rgba(30, 20, 10, 0.1);           /* خلفية زجاجية داكنة دافئة */
---glass-border: rgba(255, 200, 120, 0.2);    /* حدود خفيفة دافئة */
---accent-blue: #ff9f1c;                      /* برتقالي مشرق */
---accent-blue-dark: #e68a00;                 /* برتقالي داكن */
---accent-glow: rgba(255, 159, 28, 0.3);      /* توهج برتقالي */
---text-primary: #fff8f0;                     /* نص فاتح دافئ */
---text-secondary: rgba(255, 248, 240, 0.8);  /* نص ثانوي */
---text-tertiary: rgba(255, 248, 240, 0.6);   /* نص ثالثي */
-
+    --glass-bg: rgba(30, 40, 35, 0.18);           /* خلفية زجاجية داكنة دافئة */
+    --glass-border: rgba(176, 228, 204, 0.18);    /* حدود خفيفة دافئة */
+    --accent-blue: #408A71;                      /* أخضر متوسط */
+    --accent-blue-dark: #285A48;                 /* أخضر داكن */
+    --accent-glow: rgba(176, 228, 204, 0.3);      /* توهج أخضر */
+    --text-primary: #f7fbf8;                     /* نص فاتح */
+    --text-secondary: rgba(247, 251, 248, 0.82);  /* نص ثانوي */
+    --text-tertiary: rgba(247, 251, 248, 0.62);   /* نص ثالثي */
+    --bg-hero: linear-gradient(135deg, #08130d 0%, #101f18 25%, #142b22 50%, #0d1d14 75%, #08130d 100%);
 }
+
+body.light-mode {
+    --glass-bg: rgba(255, 255, 255, 0.18);
+    --glass-border: rgba(64, 138, 113, 0.18);
+    --accent-blue: #408A71;
+    --accent-blue-dark: #285A48;
+    --accent-glow: rgba(64, 138, 113, 0.22);
+    --text-primary: #112819;
+    --text-secondary: rgba(17, 40, 25, 0.75);
+    --text-tertiary: rgba(17, 40, 25, 0.56);
+    --bg-hero: linear-gradient(135deg, #e9f6ee 0%, #c3e9d6 25%, #a1d7bf 50%, #82c6a9 75%, #60b18d 100%);
+}
+
 
 body {
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    background: linear-gradient(135deg, #0a0a0f 0%, #151520 25%, #1a1a2e 50%, #16213e 75%, #0f3460 100%);
+    background: var(--bg-hero);
     background-attachment: fixed;
     color: var(--text-primary);
     overflow-x: hidden;
     min-height: 100vh;
     line-height: 1.6;
+    overflow-x: hidden !important;
 }
+
 
 p a {
 	color: #FFF;
@@ -74,6 +89,38 @@ nav.scrolled {
     padding: 0 2rem;
     flex-wrap: wrap;
     gap: 1rem;
+}
+
+.theme-toggle {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: var(--text-primary);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+.theme-toggle:hover {
+    background: rgba(176, 228, 204, 0.14);
+    transform: translateY(-2px);
+}
+
+.theme-toggle i {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .theme-toggle {
+        order: 3;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -170,7 +217,7 @@ nav.scrolled {
     color: var(--accent-blue);
     border-color: var(--accent-blue);
     transform: translateY(-2px);
-    background: rgba(118, 169, 250, 0.1);
+    background: rgba(176, 228, 204, 0.12);
 }
 
 .nav-links a:hover::after {
@@ -179,7 +226,7 @@ nav.scrolled {
 
 .nav-links a.active {
     color: var(--accent-blue);
-    background: rgba(118, 169, 250, 0.15);
+    background: rgba(176, 228, 204, 0.16);
     border-color: var(--accent-blue);
     box-shadow: 0 4px 15px var(--accent-glow);
 }
@@ -257,13 +304,13 @@ nav.scrolled {
 
 .mobile-nav a:hover {
     color: var(--accent-blue);
-    background: rgba(118, 169, 250, 0.1);
+    background: rgba(176, 228, 204, 0.12);
     border-color: var(--accent-blue);
 }
 
 .mobile-nav a.active {
     color: var(--accent-blue);
-    background: rgba(118, 169, 250, 0.15);
+    background: rgba(176, 228, 204, 0.16);
     border-color: var(--accent-blue);
 }
 
@@ -327,7 +374,7 @@ section {
 .shape-1 {
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(118, 169, 250, 0.4) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(176, 228, 204, 0.35) 0%, transparent 70%);
     top: -200px;
     left: -200px;
     animation-delay: 0s;
@@ -336,7 +383,7 @@ section {
 .shape-2 {
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(79, 131, 247, 0.3) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(176, 228, 204, 0.28) 0%, transparent 70%);
     top: 50%;
     right: -150px;
     animation-delay: 7s;
@@ -345,7 +392,7 @@ section {
 .shape-3 {
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(118, 169, 250, 0.35) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(176, 228, 204, 0.32) 0%, transparent 70%);
     bottom: -100px;
     left: 20%;
     animation-delay: 14s;
@@ -639,7 +686,7 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(118, 169, 250, 0.2) 0%, transparent 100%);
+    background: linear-gradient(135deg, rgba(176, 228, 204, 0.2) 0%, transparent 100%);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -741,6 +788,7 @@ section {
 .skills-container {
     position: relative;
     margin-top: 3rem;
+       overflow-x: hidden;
 }
 
 .skills-wrapper {
@@ -794,8 +842,8 @@ section {
 }
 
 .skill-node:hover {
-    transform: scale(1.2) rotate(0deg);
-    background: rgba(118, 169, 250, 0.2);
+    /* transform: scale(1.2) rotate(0deg); */
+    background: rgba(176, 228, 204, 0.18);
     border-color: var(--accent-blue);
     box-shadow: 0 0 30px var(--accent-glow);
     animation-play-state: paused;
@@ -915,7 +963,7 @@ section {
 .skill-item:hover {
     transform: translateX(10px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    background: rgba(118, 169, 250, 0.1);
+    background: rgba(176, 228, 204, 0.12);
 }
 
 .skill-item h4 {
@@ -1060,7 +1108,7 @@ section {
 .timeline-content:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    background: rgba(118, 169, 250, 0.1);
+    background: rgba(176, 228, 204, 0.1);
 }
 
 .timeline-content::before {
@@ -1123,8 +1171,8 @@ section {
 
 .timeline-skill {
     padding: 0.3rem 0.8rem;
-    background: rgba(118, 169, 250, 0.2);
-    border: 1px solid rgba(118, 169, 250, 0.3);
+    background: rgba(176, 228, 204, 0.18);
+    border: 1px solid rgba(176, 228, 204, 0.28);
     border-radius: 15px;
     font-size: 0.8rem;
     color: var(--accent-blue);
@@ -1132,7 +1180,7 @@ section {
 }
 
 .timeline-skill:hover {
-    background: rgba(118, 169, 250, 0.3);
+    background: rgba(176, 228, 204, 0.28);
     transform: translateY(-2px);
 }
 
@@ -1186,7 +1234,7 @@ section {
 
 .timeline-filter:hover,
 .timeline-filter.active {
-    background: rgba(118, 169, 250, 0.2);
+    background: rgba(176, 228, 204, 0.16);
     border-color: var(--accent-blue);
     color: var(--accent-blue);
     transform: translateY(-2px);
@@ -1362,8 +1410,8 @@ section {
 
 .tag {
     padding: 0.3rem 0.8rem;
-    background: rgba(118, 169, 250, 0.2);
-    border: 1px solid rgba(118, 169, 250, 0.3);
+    background: rgba(176, 228, 204, 0.18);
+    border: 1px solid rgba(176, 228, 204, 0.28);
     border-radius: 15px;
     font-size: 0.8rem;
     color: var(--accent-blue);
@@ -1545,7 +1593,7 @@ footer {
 
 .footer-credit-link:hover {
     transform: translateY(-2px);
-    background: rgba(118, 169, 250, 0.15);
+    background: rgba(176, 228, 204, 0.16);
     border-color: var(--accent-blue);
     color: var(--accent-blue);
     box-shadow: 0 6px 25px var(--accent-glow);
@@ -1688,22 +1736,22 @@ footer {
     }
 
     .skills-visual {
-        height: 400px;
+        height: 300px;
         margin: 0 auto;
     }
 
     .skills-circle {
-        width: 300px;
-        height: 300px;
+        width: 230px;
+        height: 230px;
     }
 
     .skill-node {
-        width: 104px;
-        height: 104px;
+        width: 95px;
+        height: 95px;
     }
 
     .skill-node .skill-icon {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .skill-node .skill-name {
@@ -1711,8 +1759,8 @@ footer {
     }
 
     .skills-center {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
         font-size: 2.5rem;
     }
 

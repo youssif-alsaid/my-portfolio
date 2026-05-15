@@ -23,6 +23,34 @@ document.querySelectorAll('.mobile-nav a').forEach(function(link) {
     });
 });
 
+// Theme toggle and dark mode support
+const themeToggleBtn = document.getElementById('themeToggleBtn');
+const body = document.body;
+
+function setTheme(theme) {
+    if (theme === 'light') {
+        body.classList.add('light-mode');
+        themeToggleBtn.querySelector('i').className = 'fa-solid fa-sun';
+    } else {
+        body.classList.remove('light-mode');
+        themeToggleBtn.querySelector('i').className = 'fa-solid fa-moon';
+    }
+    localStorage.setItem('theme', theme);
+}
+
+function initializeTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    const initialTheme = savedTheme || 'dark';
+    setTheme(initialTheme);
+}
+
+themeToggleBtn.addEventListener('click', function() {
+    const currentTheme = body.classList.contains('light-mode') ? 'light' : 'dark';
+    setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+});
+
+initializeTheme();
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
     anchor.addEventListener('click', function(e) {
